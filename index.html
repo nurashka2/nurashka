@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Special Question ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="love-container">
+        <h1 class="love-title">Do you like me? 💖</h1>
+        <div class="button-group">
+            <button class="love-button yes-button" id="yesBtn">YES! 😍</button>
+            <button class="love-button no-button" id="noBtn">No 😢</button>
+        </div>
+        <p id="sadMessage" class="sad-message">Give me another chance 💔</p>
+    </div>
+
+    <script>
+        const yesBtn = document.getElementById('yesBtn');
+        const noBtn = document.getElementById('noBtn');
+        const sadMessage = document.getElementById('sadMessage');
+
+        yesBtn.addEventListener('click', () => {
+            window.location.href = 'love.html';
+        });
+        
+        noBtn.addEventListener('click', () => {
+            sadMessage.style.display = 'block';
+        });
+        
+    </script>
+</body>
+</html>
